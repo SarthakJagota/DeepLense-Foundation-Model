@@ -112,4 +112,5 @@ This project explores how foundation-style encoders can support multiple scienti
 # 📬 Contact
 
 Created as part of ML4Sci / DeepLense research exploration.
+
 Author: Sarthak Jagota
