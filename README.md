@@ -58,7 +58,7 @@ The figure below shows per-parameter Mean Absolute Error (MAE):
 
 Pretraining consistently reduces error across all parameters, confirming effective representation transfer.
 
-# **🧠 Representation Insight
+# 🧠 Representation Insight
 
 Reconstruction alone captures morphology but not class separability.
 
@@ -66,7 +66,7 @@ Supervised learning improves discrimination.
 
 Multi-task learning balances structural preservation and classification, producing richer features.
 
-Transfer experiments confirm the encoder learns physically meaningful representations useful for parameter estimation.**
+Transfer experiments confirm the encoder learns physically meaningful representations useful for parameter estimation.
 
 # ⚠ Limitations
 
