@@ -5,3 +5,5 @@ matplotlib
 scikit-learn
 tqdm
 albumentations
+astropy
+pyyaml
