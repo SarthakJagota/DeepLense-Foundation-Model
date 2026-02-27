@@ -1,24 +1,24 @@
-DeepLense Foundation Model
+# DeepLense Foundation Model
 
 This repository presents a foundation-style learning pipeline for gravitational lensing image analysis using deep learning.
 The work explores how representation learning improves dark matter substructure detection by combining unsupervised and supervised objectives and evaluating transfer to downstream scientific tasks.
 
-🔬 Overview
+# 🔬 Overview
 
 The project investigates three stages of representation learning:
 
-Autoencoder Pretraining
+## Autoencoder Pretraining
 A convolutional autoencoder is trained to learn structural features from lensing images.
 
-Supervised Baseline
+## Supervised Baseline
 A ResNet18 classifier establishes a reference performance for lens classification.
 
-Multi-task Foundation Model
+## Multi-task Foundation Model
 A shared encoder is trained jointly for reconstruction and classification, improving representation quality and downstream performance.
 
 Experiments demonstrate that the learned encoder transfers effectively to downstream regression tasks, supporting its role as a reusable scientific representation.
 
-📊 Key Results
+# 📊 Key Results
 
 Autoencoder reconstruction achieves low loss but weak discriminative performance (~0.34 accuracy).
 
@@ -32,7 +32,7 @@ ROC analysis shows consistent gains across substructure classes.
 
 These results indicate stronger learned representations through multi-task learning.
 
-📈 Downstream Regression & Representation Transfer
+# 📈 Downstream Regression & Representation Transfer
 
 To evaluate whether the learned encoder generalizes beyond classification, it was transferred to a multi-parameter regression task using the DeepLense regression dataset.
 
@@ -50,7 +50,7 @@ The largest performance gap appears in complex parameters such as shear angle, i
 
 This demonstrates that multitask pretraining produces reusable scientific features rather than task-specific classification features.
 
-📊 Pretrained vs Random Encoder
+# 📊 Pretrained vs Random Encoder
 
 The figure below shows per-parameter Mean Absolute Error (MAE):
 
@@ -58,7 +58,7 @@ The figure below shows per-parameter Mean Absolute Error (MAE):
 
 Pretraining consistently reduces error across all parameters, confirming effective representation transfer.
 
-**🧠 Representation Insight
+# **🧠 Representation Insight
 
 Reconstruction alone captures morphology but not class separability.
 
@@ -68,7 +68,7 @@ Multi-task learning balances structural preservation and classification, produci
 
 Transfer experiments confirm the encoder learns physically meaningful representations useful for parameter estimation.**
 
-⚠ Limitations
+# ⚠ Limitations
 
 Pretraining objectives are not explicitly aligned with physical parameter estimation.
 
@@ -76,7 +76,7 @@ Orientation/shear angle prediction exhibits periodic ambiguity.
 
 Simulation-to-real domain gaps remain an open challenge.
 
-🚀 Future Directions
+# 🚀 Future Directions
 
 Physics-aware pretraining for regression of lens parameters
 
@@ -88,7 +88,7 @@ Masked autoencoder and contrastive pretraining
 
 Transformer-based backbones for improved representation learning
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 PyTorch
 
@@ -104,12 +104,12 @@ ROC/AUC evaluation (scikit-learn)
 
 GPU training
 
-📌 Motivation
+# 📌 Motivation
 
 Strong gravitational lensing provides a powerful probe of dark matter substructure.
 This project explores how foundation-style encoders can support multiple scientific tasks beyond classification, enabling reusable representations for astrophysical discovery.
 
-📬 Contact
+# 📬 Contact
 
 Created as part of ML4Sci / DeepLense research exploration.
 Author: Sarthak Jagota
